@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remotes</title>
+    <link rel="stylesheet" href="section.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="unknown1">
+            <div class="title">
+                <h1>JilaniElecticals <span>MDP</span></h1>
+            </div>
+        </div>
+        <div class="unknown2">
+            <!--<ul class="menu">
+                <li class="menu-list"><a href="#">abc</a></li>
+                <li class="menu-list"><a href="#">abcde</a></li>
+                <li class="menu-list"><a href="#">abc12</a></li>
+            </ul>-->
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search Remotes... "onkeyup="searchTable()">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="grid-section">
+            <div class="grid-item">
+                <a href="cable remotes.html"><img src="https://i.imgur.com/boUZatE.png" alt="Cable Remotes Section" class="grid-item-img"></a>
+                <a href="cable remotes.html"><div class="grid-item-title">Cable Remotes</div></a>
+            </div>
+            <div class="grid-item">
+                <a href="crt remotes.html"><img src="https://i.imgur.com/E9Vglfz.jpg" alt="CRT & TV Remotes Section" class="grid-item-img"></a>
+                <a href="crt remotes.html"><div class="grid-item-title">CRT & TV Remotes</div></a>
+            </div>
+            <div class="grid-item">
+                <a href="1"><img src="https://i.imgur.com/QlFV7Gt.jpg" alt="LCD Remotes Section" class="grid-item-img"></a>
+                <a href="1"><div class="grid-item-title">LCD Remotes</div></a>
+            </div>
+            <div class="grid-item">
+                <a href="1"><img src="https://i.imgur.com/f7HTq4E.jpg" alt="LED & SMART Remotes Section" class="grid-item-img"></a>
+                <a href="1"><div class="grid-item-title">LED & SMART Remotes</div></a>
+            </div>
+            <div class="grid-item">
+                <a href="1"><img src="https://i.imgur.com/tPteefS.jpg" alt="AC Remotes Section" class="grid-item-img"></a>
+                <a href="1"><div class="grid-item-title">AC Remotes</div></a>
+            </div>
+            <div class="grid-item">
+                <a href="1"><img src="https://i.imgur.com/QurSxWY.jpeg" alt="Other Remotes Section" class="grid-item-img"></a>
+                <a href="1"><div class="grid-item-title">Other Remotes</div></a>
+            </div>
+        </div>
+
+        <div class="table-container" id="tableContainer">
+            <table id="remoteTable">
+                <tr>
+                    <th>Remote IMG</th>
+                    <th>Remote Name</th>
+                    <th style="width: 150px;">Cost Price</th>
+                    <th style="width: 150px;">Selling Price</th>
+                    <th style="width: 150px;">Inventory</th>
+                </tr>
+                <tr>
+                    <td class="table-heading-img" style="background-image: url(https://i.imgur.com/boUZatE.png); background-position: center; background-size: contain;" onclick="openPopup(this.style.backgroundImage)"></td>
+                    <td>Kerala Vision <span class="tag">kv , act </span></td>
+                    <td>30</td>
+                    <td>100</td>
+                    <td></td>
+                    </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/J5ZHdSs.jpg); background-position: center; background-size: contain;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>Kerala Vision YY (Heavy) <span class="tag">kv , act </span></td>
+                <td>40</td>
+                <td>120</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/MzjbEMD.jpeg); background-position: center; background-size: contain;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>Kerala Vision LRIPL (Heavy) <span class="tag">kv , act </span></td>
+                <td>40</td>
+                <td>120</td>
+                <td></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="popup" id="popup" onclick="closePopup()">
+            <img id="popupImage">
+        </div>
+
+    </div>
+
+    <!--<div class="footer">
+        <ul class="sub-menu">
+            <a href=""><li class="sub-menu-list">Wanting List</li></a>
+            <a href=""><li class="sub-menu-list">123456</li></a>
+            <a href=""><li class="sub-menu-list">789012abc</li></a>
+        </ul>
+    </div>-->
+
+
+    <script>
+        function openPopup(backgroundImage) {
+            // Extract URL from background-image: url('...')
+            let imageUrl = backgroundImage.replace(/url\(['"]?(.*?)['"]?\)/, '$1').trim();
+    
+            // Check if imageUrl is empty
+            if (!imageUrl) {
+                return; // Do nothing if no URL is present
+            }
+    
+            document.getElementById("popupImage").src = imageUrl;
+            document.getElementById("popup").style.display = "flex";
+        }
+    
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+        </script>
+    
+<script>
+    function searchTable() {
+    const searchInput = document.getElementById("search");
+    const tableContainer = document.getElementById("tableContainer");
+    const gridSection = document.querySelector(".grid-section");
+    const rows = document.querySelectorAll("#remoteTable tr");
+    
+    let query = searchInput.value.toLowerCase().trim();
+    let found = false;
+
+    rows.forEach((row, index) => {
+        if (index === 0) { 
+            row.style.display = "table-row"; // Keep table headers visible
+            return;
+        }
+
+        let itemText = row.innerText.toLowerCase();
+
+        if (itemText.includes(query) && query !== "") {
+            row.style.display = "table-row";
+            found = true;
+        } else {
+            row.style.display = "none";
+        }
+    });
+
+    // Show table container only if results are found
+    tableContainer.style.display = found ? "block" : "none";
+
+    // Hide grid-section when searching, show it when search is empty
+    gridSection.style.display = query !== "" ? "none" : "grid";
+}
+
+
+</script>
+
+</body>
+</html>

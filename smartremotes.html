@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED/SMART Remotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="unknown1">
+            <div class="title">
+                <h1>JilaniElecticals <span>MDP</span></h1>
+            </div>
+        </div>
+        <div class="unknown2">
+            <!--<ul class="menu">
+                <li class="menu-list"><a href="#">abc</a></li>
+                <li class="menu-list"><a href="#">abcde</a></li>
+                <li class="menu-list"><a href="#">abc12</a></li>
+            </ul>-->
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search Remotes..." onkeyup="searchTable()">
+            </div>
+        </div>
+        
+    </nav>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th>Remote IMG</th>
+                <th>Remote Name</th>
+                <th style="width: 150px;">Cost Price</th>
+                <th style="width: 150px;">Selling Price</th>
+                <th style="width: 150px;">Inventory</th>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/ixL2Q3H.jpg); background-position: center; background-size: contain;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>MI <span class="tag"></span></td>
+                <td>30</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/ixL2Q3H.jpg); background-position: center; background-size: contain;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>MI (Heavy) <span class="tag"></span></td>
+            <td>40</td>
+            <td>120</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/U5DBJ1b.png); background-position: center; background-size: contain;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>MI (VOICE)<span class="tag"></span></td>
+            <td>40</td>
+            <td>120</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/mqujiyL.png); background-position: center; background-size: contain; background-repeat: no-repeat;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>TCL<span class="tag"></span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/mqujiyL.png); background-position: center; background-size: contain; background-repeat: no-repeat;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>TCL (Heavy) <span class="tag"></span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/mqujiyL.png); background-position: center; background-size: contain; background-repeat: no-repeat;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>TCL (VOICE) <span class="tag"></span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/0QX4Tg3.png); background-position: center; background-size: contain; background-repeat: no-repeat;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>TCL LONG</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/13agVjX.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>TCL ROUND BUTTON</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/mz8CfE8.jpg); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>TCL ROUND BUTTON (new)</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/CCLvQAC.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>KODAK</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/exp9fDq.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>THOMSON</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/hE0lF9a.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>SAMSUNG BEND <span class="tag">s.sung , curve</span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/hE0lF9a.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>SAMSUNG BEND (VOICE) <span class="tag">s.sung , curve</span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/xLBsxbf.png); background-position: center; background-size: contain; background-repeat: no-repeat;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>SAMSUNG FLAT <span class="tag">s.sung</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/xLBsxbf.png); background-position: center; background-size: contain; background-repeat: no-repeat;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>SAMSUNG FLAT (VOICE) <span class="tag">s.sung</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/4LMarui.png); background-position: center; background-size: contain; background-repeat: no-repeat;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>BPL</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(); background-position: center; background-size: contain; background-repeat: no-repeat;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>BPL (VOICE)</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/kJ2UOns.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>REALME</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/kJ2UOns.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>REALME (Heavy)</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/kJ2UOns.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>REALME (VOICE)</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/DC0sJYn.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>ONE PLUS <span class="tag">1 , 1+</span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/5XMqKvp.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>ONE PLUS (new) <span class="tag">1 , 1+</span> </td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/nh3td2C.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>ONE PLUS (White) <span class="tag">1 , 1+</span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/DC0sJYn.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>ONE PLUS (VOICE) <span class="tag">1 , 1+</span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/2FgGoDp.png); background-position: center; background-size: contain;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>SONY</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+            <tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/2m8x89s.png); background-position: center; background-size: contain;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>SONY (old model)</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+            <tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/WsDJuqI.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>SONY BRAVIA (Long) (new)</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/ONadhjO.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>SONY BRAVIA (Short) (new)</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/ZlcN0zm.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>SONY BRAVIA (old model) </td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/2FgGoDp.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>SONY (VOICE)</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/gaNaxjG.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>LG MAGIC <span class="tag">mouse</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/gaNaxjG.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>LG MAGIC (Heavy)<span class="tag">mouse</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/gaNaxjG.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>LG MAGIC (VOICE)<span class="tag">mouse</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/rLky7Ll.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>LG MAGIC (long) (new)<span class="tag">mouse</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/rLky7Ll.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>LG MAGIC (long) (new) (VOICE)<span class="tag">mouse</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/ViEUbha.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>VU / HISENSE</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/TxUxMH7.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>VU / HISENSE (Short)</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/xlXlDxK.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>VU LATEST (white button)</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/BNH4MHR.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>VU PLUS (treeview model)</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/EsS75hp.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>VU GOLD (sansui model) <span class="tag">ss , s.sui</span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/5bS5526.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>VU<span class="tag">ss , s.sui</span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/ScIb6UE.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>HAIER GOLD</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/ScIb6UE.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>HAIER GOLD (VOICE)</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/18NmL31.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>HAIER (philips model)</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/ON5aOgj.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>HAIER BEND (small)</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/f7FivOc.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>HAIER small (white button)</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/HLcTn5P.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>HAIER (small)</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/8iVY3oO.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>ACER</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/Pq5m637.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>HISENSE</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/CfAb77d.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>MICROMAX CURVE 3D <span class="tag">m max , m.max</span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/L2Cqnj0.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>MICROMAX <span class="tag">m max , m.max</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/qWIWGrO.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>SANSUI mouse <span class="tag">ss , s.sui</span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/v6dG7dZ.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>SANSUI (moto model) <span class="tag">ss , s.sui</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/ABf4Oz4.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>SANSUI (fire tv) <span class="tag">ss , s.sui</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/NlaQl8x.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>SANSUI (white button) (small) <span class="tag">ss , s.sui</span></td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/zHqm4kS.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>SANSUI (micromax model) <span class="tag">m max , m.max , ss , s.sui</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/clEP65X.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>MOTOROLA</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/QHUzWEA.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>PANASONIC</td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/jr0uld6.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>PANASONIC (new)</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/uvduKxY.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>ALEXA FIRESTICK <span class="tag">amazon , firetv</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+            <tr>
+            <td class="table-heading-img" style="background-image: url(https://i.imgur.com/EhC3nA7.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+            <td>ALEXA FIRESTICK <span class="tag">amazon , firetv</span></td>
+            <td>26</td>
+            <td>100</td>
+            <td></td>
+            </tr>
+                <tr>
+                <td class="table-heading-img" style="background-image: url(https://i.imgur.com/EXSC1cO.png); background-position: center; background-size: cover;" onclick="openPopup(this.style.backgroundImage)"></td>
+                <td>INTEX</td>
+                <td>26</td>
+                <td>100</td>
+                <td></td>
+                </tr>
+                
+        </table>
+
+        <div class="popup" id="popup" onclick="closePopup()">
+            <img id="popupImage">
+        </div>
+    </div>
+      
+
+    <!--<div class="footer">
+        <ul class="sub-menu">
+            <a href=""><li class="sub-menu-list">Wanting List</li></a>
+            <a href=""><li class="sub-menu-list">123456</li></a>
+            <a href=""><li class="sub-menu-list">789012abc</li></a>
+        </ul>
+    </div>-->
+
+    <script>
+        function openPopup(backgroundImage) {
+            // Extract URL from background-image: url('...')
+            let imageUrl = backgroundImage.replace('url("', '').replace('")', '');
+
+            document.getElementById("popupImage").src = imageUrl;
+            document.getElementById("popup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+    <script>
+    function openPopup(backgroundImage) {
+        // Extract URL from background-image: url('...')
+        let imageUrl = backgroundImage.replace(/url\(['"]?(.*?)['"]?\)/, '$1').trim();
+
+        // Check if imageUrl is empty
+        if (!imageUrl) {
+            return; // Do nothing if no URL is present
+        }
+
+        document.getElementById("popupImage").src = imageUrl;
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+    </script>
+
+
+    <script>
+        function searchTable() {
+    const input = document.getElementById("search");
+    const filter = input.value.toLowerCase();
+    const table = document.querySelector("table");
+    const rows = table.getElementsByTagName("tr");
+
+    for (let i = 1; i < rows.length; i++) { // Skip the header row
+        const cells = rows[i].getElementsByTagName("td");
+        let match = false;
+
+        // Loop through each cell in the row
+        for (let j = 0; j < cells.length; j++) {
+            if (cells[j]) {
+                const text = cells[j].textContent || cells[j].innerText;
+                if (text.toLowerCase().includes(filter)) {
+                    match = true;
+                    break;
+                }
+            }
+        }
+
+        // Toggle row visibility based on match
+        rows[i].style.display = match ? "" : "none";
+    }
+}
+
+    </script>
+</body>
+</html>

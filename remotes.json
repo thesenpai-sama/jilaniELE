@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Kerala Vision",
+        "image": "https://i.imgur.com/boUZatE.png",
+        "link": "cable-remotes.html"
+    },
+    {
+        "name": "CRT & TV Remotes",
+        "image": "https://i.imgur.com/E9Vglfz.jpg",
+        "link": "crt-tv-remotes.html"
+    },
+    {
+        "name": "LCD Remotes",
+        "image": "https://i.imgur.com/QlFV7Gt.jpg",
+        "link": "lcd-remotes.html"
+    },
+    {
+        "name": "LED & SMART Remotes",
+        "image": "https://i.imgur.com/f7HTq4E.jpg",
+        "link": "led-smart-remotes.html"
+    },
+    {
+        "name": "AC Remotes",
+        "image": "https://i.imgur.com/tPteefS.jpg",
+        "link": "ac-remotes.html"
+    },
+    {
+        "name": "Other Remotes",
+        "image": "https://i.imgur.com/QurSxWY.jpeg",
+        "link": "other-remotes.html"
+    }
+]
